@@ -1,79 +1,120 @@
-# Git på svenska
+# Git as Gaeilge
 
-## Introduktion
+## Réamhrá
 
-Det dagliga språket för de olika kommandona i `git` (eller `jävel`) är
-på svenska ett enda stort svengelskakalas. Jag finner mig själv ofta
-sägandes _"Kan du pusha branchen?"_ eller _"Jag pullar!"_, vilket
-känns pinsamt.
+An teanga a úsáidtear go laethúil leis na horduithe éagsúla i `git` (nó `amadán`)
+— is meascán mearaí Béarla agus Gaeilge atá ann i ndáiríre. Bím féin go minic
+ag rá rudaí cosúil le _"An féidir leat an branch a phúlláil?"_ nó _"Tá mé
+ag púsáil anois!"_, rud a chuireann náire an domhain orm.
 
-Detta dokument ämnar etablera en ren svensk jargong som kan användas
-på arbetsplatsen för att med fördel undvika pressade situationer med
-kollegor samt boskap.
+Is é aidhm an doiciméid seo ná jargón glan Gaeilge a leagan amach ar féidir
+linn é a úsáid san ionad oibre, ionas go seachnóimid cásanna ciotacha le
+comhghleacaithe agus le beithígh araon.
 
-## Förslag
+## Moltaí
 
-Nedan följer tabeller över verb och substantiv relaterade till git,
-deras nuvarande bruk samt förslag på hur vi tillsammans kan bättra
-oss.
+Thíos tá táblaí de bhriathra agus d'ainmfhocail a bhaineann le git,
+an Béarlachas atá in úsáid faoi láthair, agus moltaí maidir le conas
+is féidir linn feabhas a chur orainn féin.
 
-| Verb        | Nuvarande bruk | Förslag       |
-|-------------|----------------|---------------|
-| pull        | pulla          | rycka         |
-| push        | pusha          | knuffa        |
-| fetch       | fetcha         | hämta         |
-| branch      | brancha        | förgrena      |
-| commit      | commita        | förbinda      |
-| rebase      | rebasa         | ympa          |
-| merge       | merga          | sammanfoga    |
-| squash      | squasha        | mosa          |
-| stash       | stasha         | gömma         |
-| tag         | tagga          | märka         |
-| cherry-pick | cherry-picka   | plocka russin |
-| amend       | amenda         | rätta till    |
-| blame       | blamea         | klandra       |
+| Briathar     | Béarlachas         | Moladh          |
+|--------------|--------------------|-----------------|
+| init         | initáil            | tosaigh         |
+| add          | addeáil            | cuir leis       |
+| pull         | púlláil            | tarraing        |
+| push         | púsáil             | brúigh          |
+| fetch        | feitseáil          | fáigh           |
+| clone        | clónáil            | macasamhlaigh   |
+| branch       | brainseáil         | craobhaigh      |
+| commit       | commitáil          | tiomnaigh       |
+| rebase       | rébasáil           | athbhunaigh     |
+| diff         | diffeáil           | comparáidigh    |
+| merge        | méirgeáil          | cumasc          |
+| squash       | squaisáil          | fáisc           |
+| stash        | staisáil           | folaigh         |
+| tag          | tagáil             | clibeáil        |
+| fork         | forkeáil           | gabhlaigh       |
+| cherry-pick  | cherry-pickeáil    | pioc silíní     |
+| checkout     | checkeáil amach    | seiceáil        |
+| amend        | amendeáil          | leasaigh        |
+| blame        | blaméil            | lochtaigh       |
 
-| Substantiv   | Nuvarande bruk | Förslag     |
-|--------------|----------------|-------------|
-| git          | git            | jävel       |
-| repository   | repo           | förvaring   |
-| branch       | branch         | gren        |
-| commit       | commit         | förbindelse |
-| pull request | pull request   | ryckbegäran |
-| stash        | stash          | gömma       |
-| tag          | tagg           | märke       |
+| Ainmfhocal     | Béarlachas      | Moladh                    |
+|----------------|-----------------|---------------------------|
+| git            | git             | amadán                    |
+| github         | github          | lár na n-amadán           |
+| gitlab         | gitlab          | saotharlann na n-amadán   |
+| repository     | repo            | stóras                    |
+| branch         | branch          | craobh                    |
+| commit         | commit          | tiomantas                 |
+| pull request   | pull request    | iarratas tarraingthe      |
+| merge request  | merge request   | iarratas cumaisc          |
+| stash          | stash           | folachán                  |
+| tag            | tag             | clib                      |
+| fork           | fork            | gabhal                    |
+| log            | log             | dialann                   |
+| status         | status          | stádas                    |
+| diff           | diff            | comparáid                 |
+| origin         | origin          | bunús                     |
+| master         | master          | máistir                   |
+| main           | main            | príomh                    |
 
-## Exempel
+## Samplaí
 
-    - Kan du rycka grenen jag just ympade och knuffa till github?
+    - An féidir leat an chraobh a tharraing a d'athbhunaigh mé díreach ansin, agus í a bhrú go lár na n-amadán?
 
-    - Jag förgrenade alldeles nyss och förband ändringarna från min gömma där.
+    - Tá stóras nua tosaíthe agam — macasamhlaigh é agus tóg an chraobh forbartha.
 
-    - Skicka en ryckbegäran när du är färdig med sammanfogningen!
+    - Chraobhaigh mé ansin díreach agus thiomnaigh mé na hathruithe as an bhfolachán.
 
-    - Låt oss plocka russin från mäster-grenen.
-    
-    - Hoppsan, jag råkade visst kraftknuffa mot mäster-grenen.. D:
+    - Cuir iarratas tarraingthe chugam nuair atá an cumasc déanta agat!
 
-    - Mosa dina förbindelser innan du sammanfogar.
+    - Piocaimis na silíní ón máistir-chraobh.
 
-## Dagligt bruk
+    - Úps, thug mé trom-bhrú ar an máistir-chraobh de thaisme.. D:
 
-Nedan följer en rad kommandoradskommandon för att sätta upp en svensk
-gitmiljö. Avsaknaden av svenska tecken i täcknamnen beror på en brist i git
-(överväg att förbättra mjukvaran och skicka en ryckbegäran!). Följande
-kommandon ändrar din `~/.gitconfig` och kommer att verka globalt.
+    - Fáisc do chuid tiomantas sula ndéanann tú cumasc.
 
-    git config --global alias.ryck pull
-    git config --global alias.knuffa push
-    git config --global alias.gren branch
-    git config --global alias.forgrena branch
-    git config --global alias.forbinda commit
-    git config --global alias.ympa rebase
-    git config --global alias.sammanfoga merge
-    git config --global alias.gom stash
-    git config --global alias.klandra blame
-    git config --global alias.marke tag
-    git config --global alias.mark tag
+    - Gabhlaigh i lár na n-amadán!
 
-    alias jävel=git
+    - Is féidir leat sa dialann feiceáil cé a rinne an tiomantas fáiscthe deireanach a chumasc.
+
+## Úsáid laethúil
+
+Thíos tá roinnt orduithe don líne ordaithe chun timpeallacht Ghaeilge a chur
+ar bun le haghaidh git. Níl síntí fada sna leasainmneacha mar gheall ar easpa
+tacaíochta i git féin (smaoinigh ar an mbogearraí a fheabhsú agus iarratas
+tarraingthe a sheoladh!). Athróidh na horduithe seo do `~/.gitconfig` agus
+beidh siad i bhfeidhm go huilíoch.
+
+Is féidir iad ar fad a chur ar bun in aon iarracht amháin le `bash as-gaeilge.sh`,
+nó ceann ar cheann:
+
+    git config --global alias.tosaigh init
+    git config --global alias.cuirleis add
+    git config --global alias.tarraing pull
+    git config --global alias.bruigh push
+    git config --global alias.faigh fetch
+    git config --global alias.macasamhlaigh clone
+    git config --global alias.craobh branch
+    git config --global alias.craobhaigh branch
+    git config --global alias.tiomnaigh commit
+    git config --global alias.athbhunaigh rebase
+    git config --global alias.comparaidigh diff
+    git config --global alias.cumasc merge
+    git config --global alias.faisc 'merge --squash'
+    git config --global alias.folaigh stash
+    git config --global alias.clibeail tag
+    git config --global alias.clib tag
+    git config --global alias.piocsilinii cherry-pick
+    git config --global alias.seiceail checkout
+    git config --global alias.leasaigh 'commit --amend'
+    git config --global alias.lochtaigh blame
+    git config --global alias.dialann log
+    git config --global alias.stadas status
+    git config --global alias.trombruigh 'push --force'
+
+Chun `amadán` a úsáid in áit `git`, cuir an méid seo le do `~/.bashrc` nó
+`~/.zshrc`:
+
+    alias amadán=git
